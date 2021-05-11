@@ -1,0 +1,375 @@
+/* 헤더 */
+header {
+  position: relative;
+  width: 100%; height: 100px;
+  background-color: #004374;
+  /* top: 800px; */
+  z-index: 1000;
+}  
+
+/* 로고 */
+.navLogo {
+  position: relative;
+  left: 50px; top: 2px;
+}
+.navLogo img {
+  width: 90px;
+  position: absolute;
+}
+
+/* 네비게이션쓰 */
+nav {
+  /* background-color: palegoldenrod; */
+  position: relative;
+  width: 70%; height: 100%;
+  left: 12%;
+}
+.menu {
+  position: relative;
+  width: 100%; height: 100%;
+  text-align: center;
+}
+.menu > li {
+  float: left;
+  position: relative;
+  width: 14.2857%;
+  top: 40%;
+}
+.menu > li > a {
+  color: #fff;
+}
+.sub {
+  background-color: paleturquoise;
+  position: absolute;
+  width: 100%; height: 250px;
+  text-align: center;
+  top: 60px;
+  padding-top: 30px;
+  opacity: 0;
+}
+.sub > li {
+  margin-bottom: 25px;
+}
+/* //끝 */
+
+
+/* 오른쪽 미니 네비 */
+.miniNav {
+  /* background-color: palevioletred; */
+  width: 15%; height: 100%;
+  position: absolute; 
+  right: 50px; top: 0;
+}
+
+.mini {
+  width: 100%; height: 100%;
+  position: relative;
+}
+.mini > li { 
+  float: left;
+  text-align: right;
+  width: 33.3333%;
+  padding-top: 35px;
+}
+.mini > li img {
+  width: 30px;
+}
+/* //미니 네비 끝 */
+
+/* //헤더 끝 */
+
+
+
+/* 슬라이드 */
+/* 메인 슬라이드 영역 */
+.swiper-container1 { 
+  position: relative; 
+  width: 100%; height: 800px;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 10;
+}
+.swiper-container1 > .swiper-slide{ 
+  width: 100%; height: 100%; 
+  overflow: hidden;
+}
+
+/* .swiper-container img { 
+  float: left;
+  width: auto;
+} */
+/* //슬라이드 끝 */
+
+/* 컨텐츠 영역 */
+.content {
+  position:relative;
+  z-index:100;
+  background-color: #fff;
+  width: 100%; height: 100%;
+}
+
+/* 베스트 셀러 */
+.bestSeller {
+  background-color: #fff;
+  position: relative;
+  width: 100%; height: 1000px;
+}
+
+/* 베스트 셀러 텍스트 */
+
+.bs_txt {
+  /* background-color: palegoldenrod; */
+  position: absolute;
+  width:33.333%; height: 20%;
+  left: 50%; margin-left:-300px;
+  text-align: center;
+  top: 100px;
+}
+.bs_txt > p {
+  color: #004374;
+  font-size: 3em;
+  font-weight: bold;
+}
+.bs {
+  /* background-color: papayawhip; */
+  width: 100%; height: 35px;
+  position: absolute;
+  top: 50%; 
+}
+.bs > li {
+  float: left;
+  border: 1px solid #004374;
+  width: 25%; height: 100%;
+  font-size: 1.1em;
+  color: #004374;
+  line-height: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.bs > li:nth-child(1),
+.bs > li:nth-child(2),
+.bs > li:nth-child(3) {
+  border-right: none;
+}
+.bs > li:hover {
+  background-color: #004374;
+  color: #fff;
+}
+/* //끝 */
+
+/* 베스트 셀러 이미지 영역 */
+.bestimg {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 50%; height: 70%;
+  left: 50%; margin-left: -475px;
+  top: 30%;
+  border: 1px solid #004374;
+/*   overflow: hidden; */
+}
+
+.bs_thum {
+  position: relative;
+  background-color: #ffffff;
+  width: 50%; height: 100%;
+  float: left;
+  padding-top: 150px;
+}
+.bsth {
+  position: absolute;
+  width: 100%; height: 100%;
+  /* padding-top: 46px; */
+}
+.bsth img {
+  width: 200px;
+  transition: all 0.4s;
+}
+.bsth a { 
+  float: left;
+  display: block;
+  width: 50%; height: 33.3333%;
+  /* border: 1px solid #004374; */
+  text-align: center;
+  padding-top: 10px;
+}
+.bsth > a:hover > img { transform: scale(1.1)}
+
+/* 베셀 메인 이미지 */
+#bsMainImg {
+  position: relative;
+  width: 50%; height: 100%;
+  float: right; border-left: 1px solid #004374;
+  overflow: hidden;
+}
+#bsMainImg img {
+  width: 100%;
+}
+#bsMainImg {
+  text-align: center;
+  cursor: pointer;
+}
+#bsMainImg p:last-child {
+  color: #004374;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.fade {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.589);
+  width: 100%; height: 100%;
+  opacity: 0;
+  transition: all 0.7s;
+  padding-top: 350px;
+  top: -100%;
+}
+#bsMainImg > .fade > p {
+  color: rgb(53, 53, 53);
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 30px;
+}
+#bsMainImg:hover > .fade {
+  opacity: 1;
+  top: 0;
+}
+/* //베셀 끝 */
+
+
+/* 룩뿌웅 */
+.lookbook {
+  position: relative;
+  background-color: #fff;
+  width: 100%; height: 1000px;
+  top: 200px;
+}
+
+/* 룩북 슬라이드 */
+.swiper-container2 {
+  /* background-color: palevioletred; */
+  position: absolute;
+  top: 50px; left: 12%; 
+  width: 100%; height: auto;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 10;
+}
+.swiper-container2 > .swiper-wrapper > .swiper-slide > img {
+  height: 750px;
+}
+.swiper-container2 > .swiper-slide{ 
+  width: 100%; height: 100%; 
+  overflow: hidden;
+}
+/* //룩북 슬라이드 끝 */
+
+/* 룩북 오른쪽 글씨등 */
+.lbright {
+  /* background-color: tomato; */
+  position: absolute;
+  width: 100%; height: 500px;
+  top: 0; right: 0;
+  z-index: 500;
+  color: #fff;
+}
+.lbtxt {
+  /* background-color: hotpink; */
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5em;
+  width: 500px; height: 300px;
+  position: absolute;
+  left: 400px;
+}
+.lbtxt > p:nth-child(1) {
+  position: absolute;
+  left: 10px; top: 0;
+}
+.lbtxt > p:nth-child(2) {
+  position: absolute;
+  left: 100px; top: 100px;
+}
+.lbtxt > p:nth-child(3) {
+  position: absolute;
+  left: 240px; top: 200px;
+}
+
+/* MORE */
+.lbright > p {
+  position: absolute;
+  font-size: 2.5em;
+  bottom: 30px;
+  cursor: pointer;
+  font-family: 'Abril Fatface', cursive;
+  left: 60px;
+}
+.lbright > p::after {
+  display:block;
+  content: '';
+  border-bottom: solid 5px rgb(255, 84, 54);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+} 
+.lbright > p:hover::after {
+  transform: scaleX(1);
+}
+/* //끝 */
+/* //룩북 끝 */
+
+
+
+/* 새로운 상품 */
+.newArrival {
+  /* background-color: salmon; */
+  position: relative;
+  width: 100%; height: 800px;
+  top: 200px;
+}
+
+.nnn{
+  width: 100%;
+  height: 60px;
+  position: relative;
+  border-top: 1px solid #004374;
+  border-bottom: 1px solid #004374;
+}
+.marquee {
+  width: 100%;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+/*   border-top: 1px solid #004374;
+  border-bottom: 1px solid #004374; */
+  color: #004374;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.marquee span {
+  float: left;
+  margin-left: 30px;
+  width: 300px;
+}
+.woo {
+  margin-top: 100px;
+}
+
+.swiper-container3 {
+  /* background-color: salmon; */
+  width: 100%; height: 600px;
+}
+.swiper-container3 > .swiper-wrapper > .swiper-slide {
+  text-align:center;
+  width: 100%; height: 100%;
+}
+.swiper-container3 > .swiper-wrapper > .swiper-slide > img {
+  height: 400px; margin-top: 80px;
+}
+
+.fadetxt {
+  color: #333333;
+}
+.fadetxt p:last-child {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #002946
+}
+
+
